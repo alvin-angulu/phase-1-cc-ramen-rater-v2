@@ -45,7 +45,8 @@ const addSubmitListener = () => {
 
 const displayRamens = () => {
   // Add code
-  const menu = d.ocument.getElementById('ramen-menu');
+  const menu = document.getElementById('ramen-menu');
+   
   fetch("http://localhost:3000/ramens") 
     .then(response => response.json())
     .then(data => {
@@ -59,6 +60,7 @@ const displayRamens = () => {
         menu.appendChild(img);
       });
     });
+ 
 
 };
 
